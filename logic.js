@@ -50,6 +50,30 @@ inquirer
     message: "Tell us a fun fact?",
     name: "fact",
     
+  },
+  {
+    type:"input",
+    message: "Tell us a fun fact?",
+    name: "fact",
+    
+  },
+  {
+    type:"input",
+    message: "Tell us a fun fact?",
+    name: "fact",
+    
+  },
+  {
+    type:"input",
+    message: "Tell us a fun fact?",
+    name: "fact",
+    
+  },
+  {
+    type:"input",
+    message: "Tell us a fun fact?",
+    name: "fact",
+    
   }])
   .then(printResponse)
 
@@ -63,8 +87,8 @@ function printResponse(responses){
 
 init();
 // const readmeText = (answers) =>
-`# ${answers.name}
-# S${answers.name}
+`# ${answers.title}
+# S${answers.title2}
 ​
 ## Table of contents
 ​
@@ -80,7 +104,7 @@ init();
 ​
 ## General-Info
 ​
-${answers.name}
+${answers.appDiscription}
 ​
 This project utilizes a full MERN stack in order to CRUD data and display it realtime on visualizations. 
 - ${answers.name}
@@ -89,7 +113,7 @@ This project utilizes a full MERN stack in order to CRUD data and display it rea
 - Technology4
 ​
 Deployed link: 
-​${answers.name}
+​${answers.deployedLink}
 Landing page 
 ​${answers.name}
 ![Image](assets/landingpage.png)
@@ -97,7 +121,7 @@ Landing page
 ## Technologies
 ​
 Project is created with:
-​${answers.name}
+​${answers.technologies}
 - [React](https://reactjs.org/)
 - [React-Router](https://reacttraining.com/react-router/)
 - [React-Redux](https://react-redux.js.org/)
@@ -121,7 +145,7 @@ Project is created with:
 ​
 Download the repository
 ​
-${answers.deployedLink}
+${answers.deployedRepo}
 ​
 ## Code Overview
 ​
