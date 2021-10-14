@@ -1,7 +1,7 @@
 {
   "name": "README_Generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "​\r ## Table of contents\r ​\r - [General info](#General-Info)\r - [Technologies](#Technologies)\r - [Containers](#Containers)\r - [Deployment](#Deployment)\r - [Code Overview](#Code-Overview)\r - [Summary](#Summary)\r - [CSS style](#CSS-style)\r - [Routing Explained](#Routing-Explained)\r ​\r ​\r ## General-Info\r ​\r General description here\r ​\r This project utilizes a full MERN stack in order to CRUD data and display it realtime on visualizations. \r - Technology1\r - Technology2\r - Technology3\r - Technology4\r ​\r Deployed link: \r ​\r Landing page \r ​\r ![Image](assets/landingpage.png)\r ​\r ## Technologies\r ​\r Project is created with:\r ​\r - [React](https://reactjs.org/)\r - [React-Router](https://reacttraining.com/react-router/)\r - [React-Redux](https://react-redux.js.org/)\r - [Passport.js](http://www.passportjs.org/)\r - [Material-UI](https://material-ui.com/)\r - [JavaScript](https://www.javascript.com/)\r - [Bootstrap](https://getbootstrap.com/)\r - [Node.js](https://nodejs.org/)\r - [Express.js](https://expressjs.com/)\r - [MongoDb](https://www.mongodb.com/)\r - [Mongoose](https://mongoosejs.com/)\r - [Socket.io](https://socket.io/)\r - [Bcrypt.js](https://www.npmjs.com/package/bcrypt)\r - [React-Chartjs-2](https://github.com/jerairrest/react-chartjs-2)\r ​\r ## Containers\r ​\r ![Image](assets/containers.png)\r ​\r ## Deployment\r ​\r Download the repository\r ​\r - Copy the repo\r - In your terminal, cd to the CRM folder directory, `$npm i`\r - To run on browser: `npm start`\r - You can also use the heroku-link for a demo:\r - Deployed link: \r ​\r ## Code Overview\r ​\r - Basic overview\r ​\r ## Summary\r ​\r - This project is a mock-CRM for a start-up/small brewery company. \r ​\r ## CSS style\r ​\r - This part we explain the CSS style \r ​\r ​\r ## Routing-Explained\r ​\r - Routing \r ​\r ![Image](assets/routing.png)\r ​\r ## Authors\r ​\r - John Doe\r - Jane Doe\r ​\r ## License\r ​\r - Open Source",
   "main": "logic.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,6 @@
   "homepage": "https://github.com/ghmurphy2/README_Generator#readme",
   "dependencies": {
     "inquirer": "^8.2.0"
-  }
+  },
+  "devDependencies": {}
 }

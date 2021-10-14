@@ -37,18 +37,18 @@ inquirer
   },
   {
     type:"input",
-    message: "Tell us about yourself",
+    message: "Please briefly describe your project",
     name: "biography",
   },
   {
     type:"input",
-    message: "What is your LinkedIn url?",
+    message: "Please enter the url for your github repository?",
     name: "linkedin",
   },
   {
     type:"input",
-    message: "Tell us a fun fact?",
-    name: "fact",
+    message: "What technologies were used on this project?",
+    name: "technologies",
     
   },
   {
@@ -86,9 +86,9 @@ function printResponse(responses){
 }
 
 init();
-// const readmeText = (answers) =>
+const readmeText = (answers) =>{
 `# ${answers.title}
-# S${answers.title2}
+# ${answers.title2}
 ​
 ## Table of contents
 ​
@@ -106,44 +106,24 @@ init();
 ​
 ${answers.appDiscription}
 ​
-This project utilizes a full MERN stack in order to CRUD data and display it realtime on visualizations. 
-- ${answers.name}
-- Technology2
-- Technology3
-- Technology4
 ​
 Deployed link: 
+
 ​${answers.deployedLink}
+
 Landing page 
-​${answers.name}
-![Image](assets/landingpage.png)
+
+​${answers.pageLink}
+
 ​
 ## Technologies
 ​
-Project is created with:
+Project was created with:
 ​${answers.technologies}
-- [React](https://reactjs.org/)
-- [React-Router](https://reacttraining.com/react-router/)
-- [React-Redux](https://react-redux.js.org/)
-- [Passport.js](http://www.passportjs.org/)
-- [Material-UI](https://material-ui.com/)
-- [JavaScript](https://www.javascript.com/)
-- [Bootstrap](https://getbootstrap.com/)
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [MongoDb](https://www.mongodb.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [Socket.io](https://socket.io/)
-- [Bcrypt.js](https://www.npmjs.com/package/bcrypt)
-- [React-Chartjs-2](https://github.com/jerairrest/react-chartjs-2)
-​
-## Containers
-​
-![Image](assets/containers.png)
-​
+
 ## Deployment
 ​
-Download the repository
+Download the repository here
 ​
 ${answers.deployedRepo}
 ​
@@ -160,8 +140,9 @@ ${answers.summery}
 ## Authors
 ​
 - ${answers.name}
-- Jane Doe
+
 ​
 ## License
 ​
-- ${answers.name}
+- ${answers.license}`
+}
