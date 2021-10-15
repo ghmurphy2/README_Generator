@@ -4,16 +4,9 @@ const inquirer = require("inquirer");
 // prompt user to make a readme
 // build variables into readmetemplate
 // post template
-// TODO: Include packages needed for this application
-
-// TODO: Create an array of questions for user input
-const questions = [];
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
 
 // Function call to initialize app
 
@@ -22,28 +15,23 @@ function init() {
 inquirer
   .prompt ([{
     type:"input",
-    message: "Enter your GitHub username",
-    name: "username",
-  },
-    {
-    type:"input",
     message: "What is your name?",
-    name: "legalname",
+    name: "name",
   },
   {
     type:"input",
-    message: "Where are you located?",
-    name: "location",
+    message: "What is the name of your project?",
+    name: "title",
   },
   {
     type:"input",
     message: "Please briefly describe your project",
-    name: "biography",
+    name: "summary",
   },
   {
     type:"input",
-    message: "Please enter the url for your github repository?",
-    name: "linkedin",
+    message: "Please enter the url for your github repository",
+    name: "repo",
   },
   {
     type:"input",
@@ -53,43 +41,38 @@ inquirer
   },
   {
     type:"input",
-    message: "Tell us a fun fact?",
-    name: "fact",
+    message: "Please input the url for your deployed page",
+    name: "pageLink",
     
   },
   {
     type:"input",
-    message: "Tell us a fun fact?",
-    name: "fact",
+    message: "Please input the url for your github profile",
+    name: "repo",
     
   },
   {
     type:"input",
-    message: "Tell us a fun fact?",
-    name: "fact",
+    message: "Please briefly desribe the coding process for this project",
+    name: "codeOverview",
     
   },
   {
     type:"input",
-    message: "Tell us a fun fact?",
-    name: "fact",
+    message: "Please briefly describe the function of your application or project",
+    name: "appDescription",
     
   }])
-  .then(printResponse)
-
-function printResponse(responses){
-   console.log(responses)
-    fs.writeFile("README.md", readmeText, () => {
-        console.log("File saved!")
+  .then(res => {
+console.log(res)
+printResponse(generateMark(res));
   })
-}    
+
 }
 
-init();
-const readmeText = (answers) =>{
-`# ${answers.title}
-# ${answers.title2}
-​
+const generateMark = (answers) =>{
+  return `# ${answers.title}
+
 ## Table of contents
 ​
 - [General info](#General-Info)
@@ -99,7 +82,6 @@ const readmeText = (answers) =>{
 - [Code Overview](#Code-Overview)
 - [Summary](#Summary)
 - [CSS style](#CSS-style)
-- [Routing Explained](#Routing-Explained)
 ​
 ​
 ## General-Info
@@ -125,7 +107,7 @@ Project was created with:
 ​
 Download the repository here
 ​
-${answers.deployedRepo}
+${answers.Repo}
 ​
 ## Code Overview
 ​
@@ -144,5 +126,12 @@ ${answers.summery}
 ​
 ## License
 ​
-- ${answers.license}`
+- Open Source`
 }
+init();
+function printResponse(readmeText){
+   console.log(readmeText)
+    fs.writeFile("README2.md", readmeText, () => {
+        console.log("File saved!")
+  })
+}    
