@@ -1,58 +1,42 @@
-# undefined
-# undefined
-​
+# README Generator
 ## Table of contents
 ​
 - [General info](#General-Info)
 - [Technologies](#Technologies)
-- [Containers](#Containers)
 - [Deployment](#Deployment)
 - [Code Overview](#Code-Overview)
 - [Summary](#Summary)
-- [CSS style](#CSS-style)
-- [Routing Explained](#Routing-Explained)
+-
 ​
 ​
 ## General-Info
-​
-undefined
-​
-​
-Deployed link: 
-
-​undefined
-
-Landing page 
-
-​undefined
-
+​This application was written in Javascript untilizing the inquirer package. It queries users for basic information about a project or app and generates a readme by placing their information into a template.  
 ​
 ## Technologies
 ​
 Project was created with:
-​g
+​Javascript
+Inquirer
 
 ## Deployment
 ​
 Download the repository here
 ​
-undefined
+https://github.com/ghmurphy2/README_Generator
 ​
 ## Code Overview
 ​
-undefined
+This application runs in Node Js and generates an md file from user input. All work was done in Javascript.
 ​
 ## Summary
 ​
-undefined 
-​
-
+This application operates to generate a base level readme from user imput. 
 ​
 ## Authors
 ​
-- undefined
+- Gavin Murphy
 
 ​
 ## License
 ​
-- undefined
+- Open source
