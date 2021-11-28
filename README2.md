@@ -1,4 +1,4 @@
-# Readme Generator
+# Blah
 
 ## Table of contents
 ​
@@ -22,13 +22,13 @@ Deployed link:
 
 Landing page 
 
-​url
+​urlk
 
 ​
 ## Technologies
 ​
 Project was created with:
-​Javascript and Inquirer
+​css
 
 ## Deployment
 ​
@@ -38,7 +38,7 @@ undefined
 ​
 ## Code Overview
 ​
-generates readmes
+work
 ​
 ## Summary
 ​
@@ -48,9 +48,11 @@ undefined
 ​
 ## Authors
 ​
-- Gavin Murphy
+- Gavin
+- email
+- gmurphy
 
 ​
 ## License
 ​
-- Open Source
+- Creative Commons

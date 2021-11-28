@@ -47,6 +47,35 @@ inquirer
   },
   {
     type:"input",
+    message: "Please input your work email",
+    name: "email",
+    
+  },
+  {
+    name: "license",
+    type: "list",
+    message: "Choose a license: ",
+    choices: [
+        "Apache",
+        "Boost",
+        "BSD",
+        "Creative Commons",
+        "Eclipse Public",
+        "GNU",
+        "IBM",
+        "MIT",
+        "Mozilla",
+        "Perl"
+    ]
+},
+  {
+    type:"input",
+    message: "Please input  your github username",
+    name: "githubname",
+    
+  },
+  {
+    type:"input",
     message: "Please input the url for your github profile",
     name: "repo",
     
@@ -122,11 +151,13 @@ ${answers.summery}
 ## Authors
 ​
 - ${answers.name}
+- ${answers.email}
+- ${answers.githubname}
 
 ​
 ## License
 ​
-- Open Source`
+- ${answers.license}`
 }
 init();
 function printResponse(readmeText){

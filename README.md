@@ -23,6 +23,10 @@ Inquirer
 Download the repository here
 ​
 https://github.com/ghmurphy2/README_Generator
+
+Demo of the application
+
+https://watch.screencastify.com/v/MfxaZuSXmy9Oyqg0lpxm
 ​
 ## Code Overview
 ​
